@@ -27,7 +27,6 @@ class TestCastsIntervals extends TestCase
 
         $this->assertInstanceOf(\DateInterval::class, $model->date_interval);
         $this->assertDatabaseHas('test', ['id' => $model->id, 'date_interval' => 'P1D']);
-
     }
 
     public function testCarbonIntervalCast()
