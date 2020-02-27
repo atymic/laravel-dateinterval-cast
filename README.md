@@ -1,5 +1,10 @@
 # Laravel DateInterval / CarbonInterval Cast
 
+[![Build Status](https://img.shields.io/github/workflow/status/atymic/laravel-dateinterval-cast/PHP?style=flat-square)](https://github.com/atymic/laravel-dateinterval-cast/actions) 
+[![StyleCI](https://styleci.io/repos/243181977/shield)](https://styleci.io/repos/243181977) 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/atymic/laravel-dateinterval-cast.svg?style=flat-square)](https://packagist.org/packages/atymic/laravel-dateinterval-cast) 
+[![Total Downloads](https://img.shields.io/packagist/dt/atymic/laravel-dateinterval-cast.svg?style=flat-square)](https://packagist.org/packages/atymic/laravel-dateinterval-cast) 
+
 Laravel has built-in casting for `date` & `datetime` types, but if you want to use ISO 8061 durations with the native
 `DateInterval` class, or Carbon's `CarbonInterval` you're out of luck.
 
