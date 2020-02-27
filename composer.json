@@ -11,7 +11,7 @@
   ],
   "homepage": "https://github.com/atymic/laravel-dateinterval-cast",
   "require": {
-    "php": "^7.2.5",
+    "php": "^7.3",
     "laravel/framework": "7.x-dev"
   },
   "require-dev": {
