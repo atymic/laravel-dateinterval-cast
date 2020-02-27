@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Atymic\DateIntervalCast\Cast;
@@ -14,8 +15,9 @@ class CarbonIntervalCast extends DateIntervalCast
      * @param mixed                               $value
      * @param array                               $attributes
      *
-     * @return CarbonInterval|\DateInterval|mixed
      * @throws InvalidIsoDuration
+     *
+     * @return CarbonInterval|\DateInterval|mixed
      */
     public function get($model, string $key, $value, array $attributes)
     {

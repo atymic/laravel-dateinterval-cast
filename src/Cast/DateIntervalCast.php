@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Atymic\DateIntervalCast\Cast;
@@ -15,8 +16,9 @@ class DateIntervalCast implements CastsAttributes
      * @param mixed                               $value
      * @param array                               $attributes
      *
-     * @return \DateInterval|mixed
      * @throws InvalidIsoDuration
+     *
+     * @return \DateInterval|mixed
      */
     public function get($model, string $key, $value, array $attributes)
     {
@@ -33,8 +35,9 @@ class DateIntervalCast implements CastsAttributes
      * @param mixed                               $value
      * @param array                               $attributes
      *
-     * @return array|void
      * @throws InvalidIsoDuration
+     *
+     * @return array|void
      */
     public function set($model, string $key, $value, array $attributes)
     {

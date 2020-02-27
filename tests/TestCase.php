@@ -4,15 +4,13 @@ namespace Atymic\DateIntervalCast\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
-
 abstract class TestCase extends OrchestraTestCase
 {
-
     protected function setUp(): void
     {
         parent::setUp();
 
-        $this->loadMigrationsFrom(__DIR__ . '/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/migrations');
     }
 
     /**
@@ -25,9 +23,9 @@ abstract class TestCase extends OrchestraTestCase
         // Setup default database to use sqlite :memory:
         $app['config']->set('database.default', 'test');
         $app['config']->set('database.connections.test', [
-            'driver' => 'sqlite',
+            'driver'   => 'sqlite',
             'database' => ':memory:',
-            'prefix' => '',
+            'prefix'   => '',
         ]);
     }
 }

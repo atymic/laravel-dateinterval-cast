@@ -27,7 +27,6 @@ class TestCastsIntervals extends TestCase
 
         $this->assertInstanceOf(\DateInterval::class, $model->date_interval);
         $this->assertDatabaseHas('test', ['id' => $model->id, 'date_interval' => 'P1D']);
-
     }
 
     public function testCarbonIntervalCast()
@@ -69,7 +68,7 @@ class TestEloquentModelWithCustomCasts extends Model
      * @var array
      */
     protected $casts = [
-        'date_interval' => DateIntervalCast::class,
+        'date_interval'   => DateIntervalCast::class,
         'carbon_interval' => CarbonIntervalCast::class,
     ];
 }
