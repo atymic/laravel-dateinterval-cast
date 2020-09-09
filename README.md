@@ -8,7 +8,7 @@
 Laravel has built-in casting for `date` & `datetime` types, but if you want to use ISO 8061 durations with the native
 `DateInterval` class, or Carbon's `CarbonInterval` you're out of luck.
 
-This package provides two custom casts (for `DateInterval` and `CarbonInterval` respectively) using Laravel 7.x's custom
+This package provides two custom casts (for `DateInterval` and `CarbonInterval` respectively) using Laravel 7.x/8.x's custom
 casts feature.
 
 ## Installation
