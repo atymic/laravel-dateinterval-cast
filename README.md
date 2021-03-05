@@ -47,7 +47,7 @@ $model = new TestModel();
 
 $model->carbon_interval = now()->subHours(3)->diffAsCarbonInterval();
 
-$model->save(); // Saved as `P3H`
+$model->save(); // Saved as `PT3H`
 $model->fresh();
 
 $model->carbon_interval; // Instance of `CarbonInterval`
